@@ -17,6 +17,6 @@ public class LensPlaneBillboard : MonoBehaviour
         Vector3 dir = (lensCenter.position - headCamera.position).normalized;
 
         // K‰‰nn‰ plane katsomaan pelaajaa (stabiloidaan "rolling")
-        transform.rotation = Quaternion.LookRotation(dir, headCamera.up);        
+        transform.rotation = Quaternion.LookRotation(dir, lensCenter.up);        
     }
 }
